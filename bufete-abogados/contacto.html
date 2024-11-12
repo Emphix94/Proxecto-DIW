@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header bg-dark text-white py-4 d-flex align-items-center justify-content-between">
+        <div class="container d-flex align-items-center">
+            <a href="index.html"><img src="img//header/logo.png" alt="Logo Bufete" class="logo mr-3"></a>
+            <h1 class="mb-0"><strong>Concheiro de Abogados</strong></h1>
+        </div>
+        <nav class="nav justify-content-center">
+            <a href="index.html" class="nav-link text-white">Inicio</a>
+            <a href="equipo.html" class="nav-link text-white">Nuestro Equipo</a>
+            <a href="contacto.html" class="nav-link text-white">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="hero bg-light text-left py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Columna para el texto de contacto -->
+                <div class="col-md-6">
+                    <h2>Contacto</h2>
+                    <p>Estamos aquí para ayudarte. Completa el formulario y nos pondremos en contacto contigo a la brevedad.</p>
+                </div>
+                <!-- Columna para horario y dirección -->
+                <div class="col-md-6">
+                    <div class="info-box bg-white p-3 rounded shadow-sm">
+                        <h4>Horario</h4>
+                        <p>Lunes a Viernes: 9:00 AM - 6:00 PM<br>S&aacute;bado: 9:00 AM - 2:00 PM<br>Domingo: Cerrado</p>
+                        <h4>Direcci&oacute;n</h4>
+                        <p>17 Avd. Rosal&iacute;a de Castro, Santiago de Compostela, España</p>
+                        <h4>Tel&eacute;fono</h4>
+                        <p>+34 981 666 777</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <main class="container my-5">
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Enviar</button>
+        </form>
+        <div id="successMessage" class="alert alert-success mt-4" style="display: none;">
+            ¡Gracias por tu mensaje! Nos pondremos en contacto pronto.
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Concheiro Abogados. Todos los derechos reservados.</p>
+        <div class="social-icons mt-2">
+            <a href="https://es.linkedin.com/" class="social-icon icon-white"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/login" class="social-icon icon-white"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/" class="social-icon icon-white"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- Vincula los scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Vincula tu archivo de scripts.js -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
