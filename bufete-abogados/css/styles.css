@@ -73,22 +73,26 @@ h2 {
 
 /******************************************* CARDS *********************************************/
 .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #4D4D4D;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border: 3px solid rgba(255, 217, 0, 0.42); 
     border-radius: 8px;
-    margin-bottom: 30px !important;
     overflow: hidden;
+    position: relative; 
 }
 
 .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    z-index: 1 !important;
+    transform: translateY(-5px);
+    box-shadow: 10px 5px 5px #fadd3b9a;
+}
+
+.borde-yellow {
+    border-color: rgba(255, 217, 0, 0.42); 
 }
 
 .borde-yellow:hover {
-    border: 4px solid #ffd9006a !important;
+    border-color: #FFD700; 
 }
+
 
 /**************************************** ICONOS **********************************************/
 .social-icons {
@@ -168,8 +172,12 @@ blockquote::after {
 
 /****************************************** FOOTER *********************************************/
 footer {
-    background-color: #000000;
+    background-color: #343a40;
     color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative; /* Keeps footer stable */
+    z-index: 1; /* Ensures it stays above the card hover effects */
 }
 
 /***************************** BLOQUE HORARIO/DIRECCIÓN CONTACTO *******************************/
